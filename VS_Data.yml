@@ -1,0 +1,17 @@
+- VIP_NAME: test_vs
+  VIP: "10.1.1.1:443"
+  CLIENT_PROFILe: tcp-wan-optimized
+  SERVER_PROFILE: tcp-lan-optimized
+  SNAT: automap
+  pool: 
+    pool_name: test_pool
+    member_name: "test_node:80"
+    member_address: 10.0.56.56
+  partition: Common
+  monitor: 
+   monitor_name: http_test
+   MONITOR_TYPE: http
+   interval: 11
+   timeout: 34
+   send: GET /index.html\\r\\n
+
