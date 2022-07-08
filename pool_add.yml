@@ -1,0 +1,6 @@
+- pool:
+    pool_name: test_pool
+    member_name: "test_node2:80"
+    member_address: 10.0.56.57
+  partition: Common
+
