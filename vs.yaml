@@ -1,0 +1,5 @@
+- vs:
+    vs_name: test_vs
+  partition: Common
+  state:
+   disabled: True
